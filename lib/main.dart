@@ -4,12 +4,8 @@ import 'package:flutter_complete_app/Provider/favorite_provider.dart';
 import 'package:flutter_complete_app/Provider/quantity.dart';
 import 'package:provider/provider.dart';
 import 'Views/app_main_screen.dart';
-<<<<<<< HEAD
 // main
-=======
-
 // bedo
->>>>>>> c912954449790b0d41255997aa2f884e16beb26a
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
