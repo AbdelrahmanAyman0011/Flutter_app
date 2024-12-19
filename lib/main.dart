@@ -4,12 +4,18 @@ import 'package:flutter_complete_app/Provider/favorite_provider.dart';
 import 'package:flutter_complete_app/Provider/quantity.dart';
 import 'package:provider/provider.dart';
 import 'Views/app_main_screen.dart';
+<<<<<<< HEAD
 // main
+=======
+
+// bedo
+>>>>>>> c912954449790b0d41255997aa2f884e16beb26a
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
+
 // This widget is the root of your application.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,11 +23,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ 
+      providers: [
         // for favorite provider
-        ChangeNotifierProvider(create: (_)=>FavoriteProvider()),
+        ChangeNotifierProvider(create: (_) => FavoriteProvider()),
         // for quantity provider
-         ChangeNotifierProvider(create: (_) => QuantityProvider()),
+        ChangeNotifierProvider(create: (_) => QuantityProvider()),
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
