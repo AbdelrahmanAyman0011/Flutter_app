@@ -4,8 +4,8 @@ import 'package:flutter_complete_app/Provider/favorite_provider.dart';
 import 'package:flutter_complete_app/Provider/quantity.dart';
 import 'package:provider/provider.dart';
 import 'Views/app_main_screen.dart';
-// main
-// bedo
+
+// commit by bedo
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
