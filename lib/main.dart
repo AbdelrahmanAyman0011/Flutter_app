@@ -1,34 +1,30 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_app/Provider/favorite_provider.dart';
-import 'package:flutter_complete_app/Provider/quantity.dart';
-import 'package:provider/provider.dart';
-import 'Views/app_main_screen.dart';
-//fdya
-// commit by bedo
+import 'package:firebase_core/firebase_core.dart';  // Import Firebase core
+import 'screens/login_page.dart';  // Import login page
+import 'screens/Register_page.dart';  // Import register page
+
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const MyApp());
+  // Ensure Flutter bindings are initialized before Firebase is used
+  WidgetsFlutterBinding.ensureInitialized(); //  ensure that all the switches, controls, and sensors are powered up and ready. ensures Flutter has set up everything required for Firebase.
+  // Initialize Firebase
+  await Firebase.initializeApp(); 
+  runApp(MyApp());
 }
 
-// This widget is the root of your application.
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        // for favorite provider
-        ChangeNotifierProvider(create: (_) => FavoriteProvider()),
-        // for quantity provider
-        ChangeNotifierProvider(create: (_) => QuantityProvider()),
-      ],
-      child: const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: AppMainScreen(),
+    return MaterialApp(
+      title: 'Flutter App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      initialRoute: '/login',  // Defines the first screen displayed when the app launches.
+      routes: { // t5ly l navigation between screens easier and more organized.
+        '/login': (context) => LoginPage(),    // Login page route, /login --> route name
+        '/register': (context) => RegisterPage(), // Register page route
+      },
     );
   }
 }
+
