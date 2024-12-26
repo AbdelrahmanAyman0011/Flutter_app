@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:774297660894:android:0356ad6cb64fb6813d814f",
+        "android_client_info": {
+          "package_name": "com.example.fl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxd0MroGAsVLVAPym8glJWc1WV1qDY0l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:774297660894:android:054835087ded86233d814f",
         "android_client_info": {
           "package_name": "com.example.flutter_applic"
@@ -29,6 +48,82 @@
         "mobilesdk_app_id": "1:774297660894:android:297102faa3b695e23d814f",
         "android_client_info": {
           "package_name": "com.example.flutter_application_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxd0MroGAsVLVAPym8glJWc1WV1qDY0l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774297660894:android:ff9755e5bee44d903d814f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_firebasetry3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxd0MroGAsVLVAPym8glJWc1WV1qDY0l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774297660894:android:e65d8257e714ad893d814f",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxd0MroGAsVLVAPym8glJWc1WV1qDY0l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774297660894:android:2143e94671d895563d814f",
+        "android_client_info": {
+          "package_name": "com.example.weather_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxd0MroGAsVLVAPym8glJWc1WV1qDY0l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774297660894:android:e298ff0a731440043d814f",
+        "android_client_info": {
+          "package_name": "com.example.weatherapp"
         }
       },
       "oauth_client": [],

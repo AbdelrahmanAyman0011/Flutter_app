@@ -41,49 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCfXoczYNF_-Gh0BYcGHuNnqKPDjeh4euI',
-    appId: '1:774297660894:web:03d8c0fc2aaf15323d814f',
-    messagingSenderId: '774297660894',
-    projectId: 'project-7e5c8',
-    authDomain: 'project-7e5c8.firebaseapp.com',
-    storageBucket: 'project-7e5c8.firebasestorage.app',
-    measurementId: 'G-V0V32L5ZXG',
+    apiKey: 'AIzaSyCxiJJmZd2co39r4WA5tRljE4hwSm-w1yc',
+    appId: '1:483575085485:web:86f47287d04ff21e1b4924',
+    messagingSenderId: '483575085485',
+    projectId: 'final-38e63',
+    authDomain: 'final-38e63.firebaseapp.com',
+    storageBucket: 'final-38e63.firebasestorage.app',
+    measurementId: 'G-Q8Z7N1SNEE',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDxd0MroGAsVLVAPym8glJWc1WV1qDY0l4',
-    appId: '1:774297660894:android:297102faa3b695e23d814f',
-    messagingSenderId: '774297660894',
-    projectId: 'project-7e5c8',
-    storageBucket: 'project-7e5c8.firebasestorage.app',
+    apiKey: 'AIzaSyAoJJMMUrRRIFnl6cZN_H8PQd03f_JMEs0',
+    appId: '1:483575085485:android:6385e218d3e248af1b4924',
+    messagingSenderId: '483575085485',
+    projectId: 'final-38e63',
+    storageBucket: 'final-38e63.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBZNoYYO4M0kD9O9VkfdDMTdl-mcQeAzg0',
-    appId: '1:774297660894:ios:d8da7fd5eba390283d814f',
-    messagingSenderId: '774297660894',
-    projectId: 'project-7e5c8',
-    storageBucket: 'project-7e5c8.firebasestorage.app',
-    iosBundleId: 'com.example.flutterApplication3',
+    apiKey: 'AIzaSyBnqtOeoHv_eoF4AkYcaOg6MB1Ek7GjJFY',
+    appId: '1:483575085485:ios:01b8d7ab8105748c1b4924',
+    messagingSenderId: '483575085485',
+    projectId: 'final-38e63',
+    storageBucket: 'final-38e63.firebasestorage.app',
+    iosBundleId: 'com.example.weatherapp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBZNoYYO4M0kD9O9VkfdDMTdl-mcQeAzg0',
-    appId: '1:774297660894:ios:d8da7fd5eba390283d814f',
-    messagingSenderId: '774297660894',
-    projectId: 'project-7e5c8',
-    storageBucket: 'project-7e5c8.firebasestorage.app',
-    iosBundleId: 'com.example.flutterApplication3',
+    apiKey: 'AIzaSyBnqtOeoHv_eoF4AkYcaOg6MB1Ek7GjJFY',
+    appId: '1:483575085485:ios:01b8d7ab8105748c1b4924',
+    messagingSenderId: '483575085485',
+    projectId: 'final-38e63',
+    storageBucket: 'final-38e63.firebasestorage.app',
+    iosBundleId: 'com.example.weatherapp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCfXoczYNF_-Gh0BYcGHuNnqKPDjeh4euI',
-    appId: '1:774297660894:web:b3e10a9ee02c67de3d814f',
-    messagingSenderId: '774297660894',
-    projectId: 'project-7e5c8',
-    authDomain: 'project-7e5c8.firebaseapp.com',
-    storageBucket: 'project-7e5c8.firebasestorage.app',
-    measurementId: 'G-ST3SBNM130',
+    apiKey: 'AIzaSyCxiJJmZd2co39r4WA5tRljE4hwSm-w1yc',
+    appId: '1:483575085485:web:8c827a9e9d5a0e6f1b4924',
+    messagingSenderId: '483575085485',
+    projectId: 'final-38e63',
+    authDomain: 'final-38e63.firebaseapp.com',
+    storageBucket: 'final-38e63.firebasestorage.app',
+    measurementId: 'G-NPQFPJBNCD',
   );
-
 }
