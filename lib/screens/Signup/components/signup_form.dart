@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart'; // Import Firestore
 import '../../../constants.dart';
-import '/widgets/custom_text_field.dart'; 
+import '/widgets/custom_text_field.dart';
 import '../../Login/login_screen.dart';
 
 class SignUpForm extends StatelessWidget {
@@ -20,12 +21,28 @@ class SignUpForm extends StatelessWidget {
       if (_formKey.currentState?.validate() ?? false) {
         try {
           // Firebase Authentication signup
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+          UserCredential userCredential =
+              await FirebaseAuth.instance.createUserWithEmailAndPassword(
             email: emailController.text.trim(),
             password: passwordController.text.trim(),
           );
-          print("Registration Successful");
-          // Navigate to the login screen or home page
+
+          // Get the unique UID of the user
+          String uid = userCredential.user!.uid;
+
+          // Save user data in Firestore
+          await FirebaseFirestore.instance.collection('users').doc(uid).set({
+            'email': emailController.text.trim(),
+            'createdAt':
+                FieldValue.serverTimestamp(), // Use Firestore timestamp
+          });
+
+          print("Registration and Firestore Save Successful");
+
+          // Navigate to the login screen or home page after successful registration
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => const LoginScreen(),
+          ));
         } catch (e) {
           print("Registration Failed: $e");
         }
@@ -76,15 +93,20 @@ class SignUpForm extends StatelessWidget {
               Navigator.of(context).push(PageRouteBuilder(
                 pageBuilder: (context, animation, secondaryAnimation) =>
                     const LoginScreen(),
-                transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                  const begin = Offset(1.0, 0.0); // Start from the right for SignUp -> Login
+                transitionsBuilder:
+                    (context, animation, secondaryAnimation, child) {
+                  const begin = Offset(
+                      1.0, 0.0); // Start from the right for SignUp -> Login
                   const end = Offset.zero; // End at the default position
                   const curve = Curves.ease;
 
-                  var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                  var tween = Tween(begin: begin, end: end)
+                      .chain(CurveTween(curve: curve));
                   var offsetAnimation = animation.drive(tween);
 
-                  return SlideTransition(position: offsetAnimation, child: child); // Apply the transition
+                  return SlideTransition(
+                      position: offsetAnimation,
+                      child: child); // Apply the transition
                 },
               ));
             },

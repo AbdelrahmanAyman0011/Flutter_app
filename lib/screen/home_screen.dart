@@ -58,7 +58,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 300,
                   width: 300,
                   decoration: const BoxDecoration(
-                      shape: BoxShape.circle, color: Colors.deepPurple),
+                      shape: BoxShape.circle,
+                      color: Color.fromARGB(255, 9, 166, 239)),
                 ),
               ),
               Align(
@@ -67,7 +68,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 300,
                   width: 300,
                   decoration: const BoxDecoration(
-                      shape: BoxShape.circle, color: Color(0xFF673AB7)),
+                      shape: BoxShape.circle,
+                      color: Color.fromARGB(255, 1, 182, 237)),
                 ),
               ),
               Align(
@@ -75,7 +77,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Container(
                   height: 300,
                   width: 600,
-                  decoration: const BoxDecoration(color: Color(0xFFFFAB40)),
+                  decoration: const BoxDecoration(
+                      color: Color.fromARGB(255, 0, 4, 255)),
                 ),
               ),
               BackdropFilter(
